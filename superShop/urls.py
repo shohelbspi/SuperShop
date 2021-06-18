@@ -18,7 +18,7 @@ from django.urls import path, include
 from AdminDash import views
 
 urlpatterns = [
-    path('admin/', views.adminLogin),
+    path('admin/', views.adminLogin, name='admin_login'),
     path('admin/', include('AdminDash.urls')),
 
     
